@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	
+	<package name="message" namespace="/message" extends="struts-default">
+		<action name="message_*" class="sina.struts2.MessageAction" method="{1}">
+			
+			<result name="goShowMessUi" type="dispatcher">
+				/WEB-INF/showMessage.jsp
+			</result>
+			<result name="loginOk" type="dispatcher">
+				/WEB-INF/showMessage.jsp
+			</result>
+			<result name="GoPublishUi" type="dispatcher">
+				/WEB-INF/publishMessage.jsp
+			</result>
+			<result name="ok" type="dispatcher">
+				/WEB-INF/ok.jsp
+			</result>
+			
+			</action>
+	</package>
+</struts>    

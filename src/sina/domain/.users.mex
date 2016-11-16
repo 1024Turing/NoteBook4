@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="User" location="67,59" size="377,306">
+    <action name="User*" location="30,44" size="221,62">
+      <result name="goLoginUi">
+        <resourceEdge source="goLoginUi" routing="0" target="login.jsp" />
+      </result>
+      <result name="loginOk">
+        <resourceEdge source="loginOk" routing="0" target="showMessage.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="login.jsp" path="/WEB-INF/login.jsp" location="741,98" size="150,55" />
+  <webResource name="showMessage.jsp" path="/WEB-INF/showMessage.jsp" location="0,0" size="150,55" />
+</Struts2Diagram>
+

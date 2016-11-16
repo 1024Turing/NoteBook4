@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="message" location="29,325" size="280,175">
+    <action name="message_*" location="67,49" size="150,83">
+      <result name="goShowMessUi">
+        <resourceEdge source="goShowMessUi" routing="0" target="showMessage.jsp" />
+      </result>
+      <result name="loginOk">
+        <resourceEdge source="loginOk" routing="0" target="showMessage.jsp" />
+      </result>
+      <result name="GoPublishUi">
+        <resourceEdge source="GoPublishUi" routing="0" target="publishMessage.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="showMessage.jsp" path="/WEB-INF/showMessage.jsp" location="523,343" size="150,55" />
+  <package name="message" location="10,10" size="280,210">
+    <action name="message_*" location="67,49" size="150,62">
+      <result name="goShowMessUi">
+        <resourceEdge source="goShowMessUi" routing="0" target="showMessage.jsp" />
+      </result>
+      <result name="loginOk">
+        <resourceEdge source="loginOk" routing="0" target="showMessage.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="showMessage.jsp" path="/WEB-INF/showMessage.jsp" location="335,30" size="150,55" />
+  <webResource name="publishMessage.jsp" path="/WEB-INF/publishMessage.jsp" location="0,0" size="150,55" />
+</Struts2Diagram>
+
