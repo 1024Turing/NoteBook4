@@ -19,4 +19,3 @@ public interface BaseInterface {
 	public void save(Object obj);
 	public List findAll();
 }
-
